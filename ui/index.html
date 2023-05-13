@@ -1,0 +1,213 @@
+<!doctype html>
+
+<html lang="en">
+    <head>    
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+
+        <title>Uygur Türkçesi Talim Sayfası İnşası</title>
+        <meta name="description" content="Uygur Türkçesi dersleri için yazma talimi sayfalarının inşası gayesiyle hazırlanmıştır.">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mirza&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lateef:wght@400;700&display=swap">
+
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset@1.4.0/dist/reset.min.css" >
+        <link rel="stylesheet" href="styles/styles.css">
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/polyfillsIE.min.js"></script> -->
+        
+    </head>
+
+    <body>
+        <div id="id-options-container">
+
+            <div class="lisan-seçme-bayrakları">
+                <a href="../ui"><img src="icons/flag-ui-svgrepo-com.svg" alt="ئۇيغۇر" height="48" width="48" /></a> 
+                <a href="../tr"><img src="icons/flag-tr-svgrepo-com.svg" alt="Türkçe" height="48" width="48" /></a> 
+                <a href="../gb"><img src="icons/flag-gb-svgrepo-com.svg" alt="English" height="48" width="48" /></a> 
+            </div>
+            <br>
+
+            <div class="talim-yazısı-div">      
+                <label for="id-talim-yazısı">كۆرسەتمە خېتى</label>
+                <textarea id="id-talim-yazısı" name="talim-yazısı" rows="3" dir="rtl"></textarea>
+            </div>
+            <br>
+
+            <div class="ayarlar">        
+                <fieldset>
+                    <legend class="fieldset-label">بەت ئورۇنلاشتۇرۇشى</legend>
+        
+                    <div class="fieldset-row sayfa-tertibi">
+                        <label class="fieldset-select-label" for="id-sayfa-tipi">بەت تىپى</label>
+                        <select class="fieldset-select-area" name="sayfa-tipi" id="id-sayfa-tipi">
+                            <option value="a3">A3</option>
+                            <option value="a4">A4</option>
+                            <option value="a5">A5</option>
+                            <option value="letter">Letter</option>
+                            <option value="legal">Legal</option>
+                            <option value="tabloid">Tabloid</option>
+                        </select>
+                    </div>
+        
+                    <div class="fieldset-row sayfa-tertibi">
+                        <label class="fieldset-select-label" for="id-boş-satırlar">ئوچۇق سىزىق</label>
+                        <div class="fieldset-select-area">
+                            <input type="number" id="id-boş-satırlar" name="boş-satırlar" step="1" min="0" max="5" value="0" required >
+                            <span class="validity"></span>
+                        </div>
+                    </div>
+        
+                </fieldset>
+                <br>
+        
+                <fieldset>
+                    <legend class="fieldset-label">تېكىست تەڭشەكلىرى</legend>
+
+                    <div class="fieldset-row yazı-ayarı">
+                        <label class="fieldset-select-label" for="id-yazı-tipi">خەت نۇسخىسى</label>
+                        <select class="fieldset-select-area" name="yazı-tipi" id="id-yazı-tipi">
+                            <option value="Amiri">Amiri</option>
+                            <option value="Mirza">Mirza</option>
+                            <option value="Rakkas">Aref Ruqaa</option>
+                            <option value="Rakkas">Reem Kufi</option>
+                            <option value="Lateef">Lateef</option>
+                            <option value="NotoNaskhArabic">Noto Naskh Arabic</option>
+                            <option value="NotoNastaliqUrdu">Noto Nastaliq Urdu</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldset-row yazı-ayarı">
+                        <label class="fieldset-select-label" for="id-yazı-ebatı">خەت چوڭلۇقى</label>
+                        <div class="fieldset-select-area">
+                            <input type="number" id="id-yazı-ebatı" name="yazı-ebatı" step="2" min="14" max="32" value="20" required >
+                            <span class="validity"></span>
+                        </div>
+                    </div>
+        
+                    <div class="fieldset-row yazı-ayarı">
+                        <label class="fieldset-select-label" for="id-yazı-rengi">خەت نۇسخىسى</label>
+                        <input class="fieldset-select-area" type="color" id="id-yazı-rengi" name="yazı-rengi" value="#AAAAAA">
+                    </div>
+                </fieldset>
+                <br>
+        
+                <fieldset>
+                    <legend class="fieldset-label">قۇر تەڭشىكى</legend>                    
+                    
+                    <div class="fieldset-row çizgi-ayarı">
+                        <label class="fieldset-select-label" for="id-çizgi-kalınlığı">سىزىق قېلىنلىقى</label>
+                        <input class="fieldset-select-area" type="range" id="id-çizgi-kalınlığı" name="çizgi-kalınlığı" min="0" max="1" step=".25" value=".25" list="markers">
+                    </div>
+                    <datalist id="markers">
+                        <option value="0"></option>
+                        <option value=".25"></option>
+                        <option value=".5"></option>
+                        <option value=".75"></option>
+                        <option value="1"></option>
+                    </datalist>
+                    
+                    <div class="fieldset-row çizgi-ayarı">
+                        <label class="fieldset-select-label" for="id-çizgi-rengi">قۇر رەڭ</label>
+                        <input class="fieldset-select-area" type="color" id="id-çizgi-rengi" name="çizgi-rengi" value="#363636">
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="fieldset-ufki">
+                    <legend class="fieldset-label">توغرىلاش لىنىيىسى</legend>
+                
+                    <div class="hiza-çizgileri-radio">
+                        <input type="checkbox" id="id-çizgi-üst" name="çizgi-üst" checked>
+                        <label for="id-çizgi-üst">ئۈستى</label>
+                    </div>
+                
+                    <div class="hiza-çizgileri-radio">
+                        <input type="checkbox" id="id-çizgi-merkez" name="çizgi-merkez" checked>
+                        <label for="id-çizgi-merkez">مەركىزى</label>
+                    </div>
+                
+                    <div class="hiza-çizgileri-radio">
+                        <input type="checkbox" id="id-çizgi-kuyruk" name="çizgi-kuyruk" checked>
+                        <label for="id-çizgi-kuyruk">قۇيرۇق</label>
+                    </div>
+                </fieldset>
+                <br>
+        
+                <fieldset>
+                    <legend class="fieldset-label">تەڭشەكلەرنى تەكرارلاڭ</legend>
+                    
+                    <!-- <div class="fieldset-row tekrar-ayarı">
+                        <label class="fieldset-select-label" for="id-tekrar-adedi">Tekrar Adedi </label>
+                        <div class="fieldset-select-area">
+                            <input type="number" id="id-tekrar-adedi" name="tekrar-adedi" step="1" min="0" max="10" value="3" required >
+                            <span class="validity"></span>
+                        </div>
+                    </div> -->
+                    <div class="fieldset-row tekrar-ayarı">
+                        <label class="fieldset-select-label" for="id-ufki-tekrar-arası-mesafe">ئۇپۇق تەكرارلاش ئارىلىقى</label>
+                        <div class="fieldset-select-area">
+                            <input type="number" id="id-ufki-tekrar-arası-mesafe" name="tekrar-arası-mesafe" step="1" min="0" max="20" value="10" required >
+                            <span class="validity"></span>
+                        </div>
+                    </div>
+                </fieldset>
+        
+                <fieldset class="fieldset-ufki">
+                    <legend class="fieldset-label">شەكىلنى تەكرارلاش</legend>
+                
+                    <div class="tekrar-şekli-radio">
+                        <input type="radio" id="id-tekrar-şekli-tekrarsız" name="tekrar-şekli" value="tekrarsız" checked>
+                        <label for="id-tekrar-şekli-tekrarsız">تەكرارلانمايدۇ</label>
+                    </div>
+                
+                    <div class="tekrar-şekli-radio">
+                        <input type="radio" id="id-tekrar-şekli-amudi" name="tekrar-şekli" value="amudi">
+                        <label for="id-tekrar-şekli-amudi">قولدا</label>
+                    </div>
+                
+                    <div class="tekrar-şekli-radio">
+                        <input type="radio" id="id-tekrar-şekli-ufki" name="tekrar-şekli" value="ufki">
+                        <label for="id-tekrar-şekli-ufki">ئۇپۇق</label>
+                    </div>
+                
+                    <div class="tekrar-şekli-radio">
+                        <input type="radio" id="id-tekrar-şekli-ikiside" name="tekrar-şekli" value="ikiside">
+                        <label for="id-tekrar-şekli-ikiside">ھەر ئىككىلىسى</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="tuşlar">
+                <button id="inşa-et-btn">قۇر</button>
+                <button id="pdf-al-btn"> ئېلىڭ PDF</button>
+            </div>
+        </div>
+
+        <div id="id-pdf-presenter">
+        </div>
+        
+        <br>
+        <br>
+        <!-- The actual snackbar -->
+        <div id="snackbar"></div>
+
+    </body>
+    
+    <script src="scripts/scripts-aletler.js"></script>
+    <script src="scripts/scripts-index.js"></script>
+
+
+</html>

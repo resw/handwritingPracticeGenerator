@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url("styles-snackbar.css");
+@import url("styles-umumi.css");
+
+body {
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 1rem;
+
+    /* height: 100vh; */
+
+    margin: 0 1rem 0 1rem;
+}
+
+fieldset{
+    padding: .25rem;
+}
+
+.lisan-seçme-bayrakları{
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 1rem;
+
+    margin-top: 1rem;
+}
+
+.lisan-seçme-bayrakları > img{
+    width: 2rem;
+    height: 2rem;
+}
+
+#id-options-container {
+    width: 20rem;
+
+    margin-top: 1rem;
+
+    /* background-color: rgba(36, 180, 84, 0.432); */
+}
+
+#id-pdf-presenter {
+    /* position: absolute; */
+
+    width: 210mm;
+    height: 292mm;
+
+    border: 1px solid black;
+    margin-top: 1rem;
+
+    /* background-color: rgba(36, 180, 84, 0.432); */
+}
+
+.fieldset-ufki{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.talim-yazısı-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+#id-talim-yazısı {
+    width: 90%;
+}
+
+.fieldset-label{
+    margin-inline-start: 3rem;
+}
+
+.fieldset-row{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 1rem 0 1rem;
+}
+
+/* .fieldset-select-label{
+    width: 100%;
+
+} */
+
+.fieldset-select-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 5rem;
+    height: 2rem;
+    margin: .1rem;
+}
+
+.fieldset-select-area > input{
+    width: 100%;
+}
+
+input:invalid + span::after {
+
+    content: "✖";
+    padding-left: 5px;
+}
+  
+input:valid + span::after {
+    
+    content: "✓";
+    padding-left: 5px;
+}
+
+.tuşlar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    margin: 1rem 10%;
+}
+
+#inşa-et-btn{
+    width: 10rem;
+
+}
+
+#pdf-al-btn{
+    width: 10rem;
+
+}

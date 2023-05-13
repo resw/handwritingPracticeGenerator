@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap'); */
+
+/* @font-face {
+    font-family: "Aref Ruqaa Turkish";
+    src: url("fonts/ArefRuqaaTurkish-Regular.ttf");
+} */
+
+:root {
+    --imperial-red: #F02D3A;
+    --sky-blue-crayola: #76E5FC;
+    --misty-ross: #BAAB68;
+    --honeydew: #E2FCEF;
+    --inchworm: #B4E33D;
+    --charcoal: #2E4756;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* font-family: "Aref Ruqaa Turkish", serif; */
+    font-family: 'Amiri', serif;
+    text-rendering: optimizeSpeed;
+
+    background-color: #f8f9fa;
+
+    font-size: 22px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p {
+    text-indent: 2rem;
+
+    /* column-count: 1;
+    column-gap: 50px; */
+}
+
+.kadim-turkce-yazi {
+    white-space: break-spaces;
+    text-indent: 0; /* p'den geleni iptal için */
+    text-rendering: optimizeLegibility;
+/* 
+    border: 1px solid black;
+    border-radius: 9px;
+*/
+    padding: 5px; 
+}
